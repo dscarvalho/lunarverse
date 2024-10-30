@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='pic2text',
     version='0.1',
-    install_requires=['pix2text==1.1.0.2'],
+    install_requires=['pix2text==1.1.0.2', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

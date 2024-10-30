@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='wikidata',
     version='0.1',
-    install_requires=['mediawikiapi==1.2', 'wikibase-rest-api-client==0.1.3'],
+    install_requires=['mediawikiapi==1.2', 'wikibase-rest-api-client==0.1.3', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

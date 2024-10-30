@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='llamaindex_index',
     version='0.1',
-    install_requires=['llama_index~=0.10.58', 'llama-index-embeddings-azure-openai~=0.1.11', 'llama-index-llms-azure-openai~=0.1.10'],
+    install_requires=['llama_index~=0.10.58', 'llama-index-embeddings-azure-openai~=0.1.11', 'llama-index-llms-azure-openai~=0.1.10', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

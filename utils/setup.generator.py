@@ -16,6 +16,8 @@ EXTRAS_REQUIREMENTS = {
 
 REQUIREMENTS_FILE_PATH = 'requirements.txt'
 
+LUNARCORE_PACKAGE = "lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core"
+
 class ComponentSetupGenerator:
     def __init__(self, name, version, description, package_dir):
         self.name = name
@@ -49,12 +51,18 @@ class ComponentSetupGenerator:
             file.write(f")\n")
 
     def _load_requirements(self, requirements_path=REQUIREMENTS_FILE_PATH):
+        requirements = []
         if os.path.isfile(requirements_path):
             with open(requirements_path, 'r') as file:
                 lines = file.read().splitlines()
-                return [line for line in lines if line and not line.startswith('#')]
-        else:
-            return []
+                requirements.extend(line for line in lines if line and not line.startswith('#'))
+            
+        if LUNARCORE_PACKAGE not in requirements:
+            requirements.append(LUNARCORE_PACKAGE)
+
+        return requirements
+            
+        
         
 
 def get_all_dirs(path='.'):

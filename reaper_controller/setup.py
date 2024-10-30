@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='reaper_controller',
     version='0.1',
-    install_requires=['langchain~=0.1.7', 'python-reapy~=0.10.0'],
+    install_requires=['langchain~=0.1.7', 'python-reapy~=0.10.0', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='causal_discovery_llm',
     version='0.1',
-    install_requires=['econml>=0.14.1,<1.0.0', 'graphviz>=0.17,<1.0.0', 'pygraphviz>=1.7,<2.0', 'langchain~=0.1.7', 'langchain-community~=0.2.11', 'statsmodels~=0.14.0', 'scipy~=1.14.0', 'causal-learn~=0.1.3', 'torchvision~=0.19.0'],
+    install_requires=['econml>=0.14.1,<1.0.0', 'graphviz>=0.17,<1.0.0', 'pygraphviz>=1.7,<2.0', 'langchain~=0.1.7', 'langchain-community~=0.2.11', 'statsmodels~=0.14.0', 'scipy~=1.14.0', 'causal-learn~=0.1.3', 'torchvision~=0.19.0', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='online_spreadsheet_input',
     version='0.1',
-    install_requires=['pyocclient==0.6', 'openpyxl>=3'],
+    install_requires=['pyocclient==0.6', 'openpyxl>=3', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

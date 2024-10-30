@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='audio2base64',
     version='0.1',
-    install_requires=['mimetypes'],
+    install_requires=['mimetypes', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',

@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='causal_graph_viewer',
     version='0.1',
-    install_requires=['pandas>=2.2.0', 'matplotlib>=3.1.1'],
+    install_requires=['pandas>=2.2.0', 'matplotlib>=3.1.1', 'lunarcore @ git+https://github.com/lunarbase-ai/lunar.git@lunarbase#subdirectory=lunarbase/core'],
     tests_require=['pytest'],
     extras_require={'dev': ['pytest']},
     author='Lunarbase (https://lunarbase.ai/)',
